@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Belépés</title>
+    <meta charset="UTF-8">
+    <meta name="Egyesületi interaktív napló" content="Egyesületi interaktív napló a tagoknak">
+    <meta name="Dömény Kornélia" content="ZCBITN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../mainpage.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logoikon.svg">
+    <script src="../js/belepes.js"></script>
+</head>
+
+<body class="bev">
+    <main class="elooldal">
+        <div class="kepecske">
+            <img src="../images/szarny.svg" alt="">
+        </div>
+
+        <div id="regisztracio" class="regisztracios-doboz">
+            <h2>Regisztráció</h2>
+
+            <div class="kitoltes">
+                <form id="regForm" onsubmit="saveName(event)">
+                    <div id="errorMsg" class="error"></div>
+
+                    <label>Teljes név:</label>
+                    <input type="text" id="teljesNev" required>
+
+                    <label>Becenév:</label>
+                    <input type="text" id="becenev" required>
+
+                    <label>Karakternév:</label>
+                    <input type="text" id="karakterNev" required>
+
+                    <label>Születési dátum:</label>
+                    <input type="date" id="szulDatum" required>
+
+                    <label>Email cím:</label>
+                    <input type="email" id="email" required>
+
+                    <label>Jelszó:</label>
+                    <input type="password" id="jelszo" required>
+
+                    <label>Jelszó megerősítése:</label>
+                    <input type="password" id="jelszo2" required>
+
+                    <button type="submit" class="submit-btn">Regisztráció</button>
+
+                </form>
+            </div>
+            <div class="fixedikonok">
+                <a href="../html/kalk.html" class="ikonka2">
+                    <img class="ikon-img" src="../images/horseikon.svg" alt="">
+                </a>
+                <a href="../html/ijaszat.html" class="ikonka2">
+                    <img class="ikon-img" src="../images/bowikon.svg" alt="">
+                </a>
+                <a class="ikonka2">
+                    <img class="ikon-img" src="../images/houseikon.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+</body>

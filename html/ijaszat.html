@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Íjászat</title>
+    <meta charset="UTF-8">
+    <meta name="Egyesületi interaktív napló" content="Egyesületi interaktív napló a tagoknak">
+    <meta name="Dömény Kornélia" content="ZCBITN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../mainpage.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logoikon.svg">
+    <script src="../js/ijszat.js"></script>
+</head>
+
+<body class="kalkbody">
+    <main>
+        <nav class="bal">
+            <div class="ikon">
+                <img class="ikon-img" src="../images/logoikon.svg" alt="">
+                <span>Weboldal</span>
+            </div>
+            <div class="ikon">
+                <img class="ikon-img" src="../images/trophyikon.svg" alt="">
+                <span>Versenyek</span>
+            </div>
+            <a href="../html/mainpage.html" class="ikon">
+                <img class="ikon-img" src="../images/houseikon.svg" alt="">
+                <span>Fő oldal</span>
+            </a>
+            <label class="ikon1">
+                <input type="checkbox" class="toggle-popover" hidden>
+                <img class="ikon-img" src="../images/activitiesikon.svg" alt="">
+                <span>Edzések</span>
+
+                <div class="reszletek">
+                    <a href="../html/kalk.html" class="ikon3">
+                        <img class="ikon-img" src="../images/horseikon.svg" alt="">
+                    </a>
+                    <a href="../html/ijaszat.html" class="ikon3">
+                        <img class="ikon-img" src="../images/bowikon.svg" alt="">
+                    </a>
+                    <div class="ikon3">
+                        <img class="ikon-img" src="../images/sabersikon.svg" alt="">
+                    </div>
+                    <div class="ikon3">
+                        <img class="ikon-img" src="../images/castleikon.svg" alt="">
+                    </div>
+                    <dic class="ikon3">
+                        <img class="ikon-img" src="../images/ticketikon.svg" alt="">
+                </div>
+                </div>
+            </label>
+            <a href="../html/kalk.html" class="ikon2">
+                <img class="ikon-img" src="../images/horseikon.svg" alt="">
+                <span>Lovaglás</span>
+            </a>
+            <a href="../html/ijaszat.html" class="ikon2" id="oldal">
+                <img src="../images/bowikon.svg" alt="">
+                <span>Íjászat</span>
+            </a>
+            <div class="ikon2">
+                <img class="ikon-img" src="../images/sabersikon.svg" alt="">
+                <span>Vitézképző</Var></span>
+            </div>
+            <div class="ikon2">
+                <img class="ikon-img" src="../images/castleikon.svg" alt="">
+                <span>Gyerekvár</span>
+            </div>
+            <div class="ikon2">
+                <img class="ikon-img" src="../images/ticketikon.svg" alt="">
+                <span>Bérletek</span>
+            </div>
+            <a href="../html/belepes.html" class="ikon">
+                <img class="ikon-img" src="../images/personikon.svg" alt="">
+                <span>Profil</span>
+            </a>
+        </nav>
+
+        <section class="kozep">
+            <section class="ia-container">
+                <br>
+                <h1 class="ia-title">Íjászat — Történelem és Gyakorlat</h1>
+
+                <div class="ia-card">
+
+                    <!-- Történelem -->
+                    <div class="ia-section">
+                        <button class="ia-button" onclick="iaToggle('ia-hist')">📜 Az íjászat története</button>
+                        <div class="ia-content" id="ia-hist">
+                            <p>Az íjászat 10–15 ezer éves múltra tekint vissza, kezdetben vadászati, majd haditechnikai
+                                eszközként szolgált. Az őskorban alapvető túlélési előnyt adott, hiszen lehetővé tette a
+                                távoli
+                                célok elérését.</p>
+
+                            <p><strong>Ókor:</strong> Egyiptomban, Mezopotámiában és a görög kultúrákban az íj
+                                hadifegyver volt.</p>
+                            <p><strong>Középkor:</strong> Az angol hosszúíj döntő szerepet játszott a százéves
+                                háborúban,
+                                például az Agincourt-i csatában.</p>
+                            <p><strong>Ázsia:</strong> A mongol lovasíjászok mozgékonyságukkal és pontosságukkal
+                                legendássá váltak.</p>
+                            <p><strong>Modern kor:</strong> A 19. századtól sportként él tovább, ma pedig olimpiai szám.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="ia-section">
+                        <button class="ia-button" onclick="iaToggle('ia-modern')">🎯 Az íjászat mai gyakorlata</button>
+                        <div class="ia-content" id="ia-modern">
+                            <p>Az íjászat egyszerre építi a testet és az elmét: a sport alapja a kontroll, a pontosság
+                                és
+                                a testtudat.</p>
+
+                            <ul>
+                                <li>Pontosság és koncentráció fejlesztése</li>
+                                <li>Váll-, hát- és karizom erősítése</li>
+                                <li>Szél- és távolságelemzés, technikai tudás</li>
+                                <li>Rekreációs, verseny- és hagyományőrző formák</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ia-section">
+                        <button class="ia-button" onclick="iaToggle('ia-safety')">🛡️ Biztonság és kezdőknek</button>
+                        <div class="ia-content" id="ia-safety">
+                            <p>Az íjászat akkor biztonságos, ha megfelelő felszereléssel és odafigyeléssel gyakorolják.
+                                Kezdőknek különösen fontos a helyes tartás és a szabályok betartása.</p>
+
+                            <ul>
+                                <li>Gyerekek 6–7 éves kortól elkezdhetik</li>
+                                <li>Kis húzóerejű íj ajánlott kezdetnek</li>
+                                <li>Kötelező a karvédő, kesztyű, biztonságos lőtér</li>
+                                <li>Csak kijelölt irányba és biztonságos helyre szabad lőni</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="ia-section">
+                        <button class="ia-button" onclick="iaToggle('ia-sum')">✨ Összegzés</button>
+                        <div class="ia-content" id="ia-sum">
+                            <p>Az íjászat egyszerre tradicionális és modern sport: fejleszti a koncentrációt, a
+                                testtudatot
+                                és különleges élményt nyújt szinte minden korosztálynak.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </section>
+
+        <section class="jobb">
+            <div class="profil">
+                <div class="kor">
+
+                </div>
+                <div class="level-container">
+                    <p class="nev">Karakter név</p>
+                    <div class="level-label">Szint: 5</div>
+                    <div class="level-bar">
+                        <div class="level-progress" style="width: 40%;"></div>
+                    </div>
+                    <div class="kiskorok">
+                        <div class="kiskor"></div>
+                        <div class="kiskor"></div>
+                        <div class="kiskor"></div>
+                        <div class="kiskor"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>

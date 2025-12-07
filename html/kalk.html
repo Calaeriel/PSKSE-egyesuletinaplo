@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <title>Lovaglás</title>
+    <meta charset="UTF-8">
+    <meta name="Egyesületi interaktív napló" content="Egyesületi interaktív napló a tagoknak">
+    <meta name="Dömény Kornélia" content="ZCBITN">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../mainpage.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logoikon.svg">
+    <script src="../js/kallk.js" defer></script>
+</head>
+
+<body class="kalkbody">
+    <main>
+        <nav class="bal">
+            <div class="ikon">
+                <img class="ikon-img" src="../images/logoikon.svg" alt="">
+                <span>Weboldal</span>
+            </div>
+            <div class="ikon">
+                <img class="ikon-img" src="../images/trophyikon.svg" alt="">
+                <span>Versenyek</span>
+            </div>
+            <a href="../html/mainpage.html" class="ikon">
+                <img class="ikon-img" src="../images/houseikon.svg" alt="">
+                <span>Fő oldal</span>
+            </a>
+            <label class="ikon1">
+                <input type="checkbox" class="toggle-popover" hidden>
+                <img class="ikon-img" src="../images/activitiesikon.svg" alt="">
+                <span>Edzések</span>
+
+                <div class="reszletek">
+                    <a href="../html/kalk.html" class="ikon3">
+                        <img class="ikon-img" src="../images/horseikon.svg" alt="">
+                    </a>
+                    <a href="../html/ijaszat.html" class="ikon3">
+                        <img class="ikon-img" src="../images/bowikon.svg" alt="">
+                    </a>
+                    <div class="ikon3">
+                        <img class="ikon-img" src="../images/sabersikon.svg" alt="">
+                    </div>
+                    <div class="ikon3">
+                        <img class="ikon-img" src="../images/castleikon.svg" alt="">
+                    </div>
+                    <div class="ikon3">
+                        <img class="ikon-img" src="../images/ticketikon.svg" alt="">
+                    </div>
+                </div>
+            </label>
+            <a href="../html/kalk.html" class="ikon2" id="oldal">
+                <img src="../images/horseikon.svg" alt="">
+                <span>Lovaglás</span>
+            </a>
+            <a href="../html/ijaszat.html" class="ikon2">
+                <img class="ikon-img" src="../images/bowikon.svg" alt="">
+                <span>Íjászat</span>
+            </a>
+            <div class="ikon2">
+                <img class="ikon-img" src="../images/sabersikon.svg" alt="">
+                <span>Vitézképző</Var></span>
+            </div>
+            <div class="ikon2">
+                <img class="ikon-img" src="../images/castleikon.svg" alt="">
+                <span>Gyerekvár</span>
+            </div>
+            <div class="ikon2">
+                <img class="ikon-img" src="../images/ticketikon.svg" alt="">
+                <span>Bérletek</span>
+            </div>
+            <a href="../html/belepes.html" class="ikon">
+                <img class="ikon-img" src="../images/personikon.svg" alt="">
+                <span>Profil</span>
+            </a>
+        </nav>
+
+        <section class="kozep">
+            <br>
+            <h1>Lovaglás</h1>
+            <hr>
+            <br>
+            <p>
+                A lovaglás örömteli és egészséges tevékenység lehet minden korosztály számára, de nagyon fontos, hogy a
+                ló és a lovas közötti testsúlyarány megfelelő legyen. A ló fizikai felépítése és izomzata határozza meg,
+                mennyi terhet képes biztonságosan elviselni. Ha a lovas túlságosan nehéz a lóhoz képest, az hosszú távon
+                sérülésekhez, hát- és ízületi problémákhoz vezethet, és a ló komfortérzetét is csökkenti.
+                <br><br>
+                Általános iránymutatás:
+                <br><br>
+                Könnyű lovasok és kezdők a kisebb testű, de mozgékony lovakat válasszák.
+                <br><br>
+                Közepes vagy nehezebb lovasok számára a közepes vagy nehéz terhelésű lovak biztonságosak.
+                <br><br>
+                A ló testsúlyának 15–20%-ánál nagyobb terhelés már kockázatos, ezért mindig érdemes figyelembe venni az
+                arányt.
+                <br><br>
+            </p>
+            <section class="lc-calculator">
+                <h2>Ló–lovas testsúly arány kalkulátor</h2>
+
+                <div class="lc-input-group">
+                    <label for="horseWeight">Ló testsúlya (kg, opcionális):</label>
+                    <input type="number" id="horseWeight" placeholder="pl. 500">
+                </div>
+
+                <div class="lc-input-group">
+                    <label for="riderWeight">Lovas testsúlya (kg):</label>
+                    <input type="number" id="riderWeight" placeholder="pl. 70">
+                </div>
+
+                <button class="lc-button" onclick="calculate()">Ellenőrzés</button>
+
+                <div id="result" class="lc-result"></div>
+                <div id="horseResults" class="lc-horse-cards"></div>
+            </section>
+            <br><br>
+            <h3>Mikor lehet elkezdeni lovagolni egy lovat?</h3>
+            <ul>
+                <li>A ló és a lovas testsúlya arányos.</li>
+                <li>A ló egészséges, jól fejlett hátizmokkal rendelkezik.</li>
+                <li>A ló fiatal kora (1–3 éves kor) még nem alkalmas a lovas hordozására, mert a csontozata és ízületei
+                    fejlődésben vannak.</li>
+            </ul>
+            <br><br>
+            <h3>Mikor nem szabad lovagolni?</h3>
+            <ul>
+                <li>Ha a lovas súlya meghaladja a ló ajánlott terhelhetőségét.</li>
+                <li>Ha a ló hátizmata vagy ízületei gyengék vagy sérültek.</li>
+                <li>Ha a ló nagyon fiatal (1–3 éves) vagy nagyon idős, beteg.</li>
+                <li>Ha a ló túlterhelt vagy fáradt.</li>
+            </ul>
+        </section>
+
+        <section class="jobb">
+            <div class="profil">
+                <div class="kor">
+
+                </div>
+                <div class="level-container">
+                    <p class="nev">Karakter név</p>
+                    <div class="level-label">Szint: 5</div>
+                    <div class="level-bar">
+                        <div class="level-progress" style="width: 40%;"></div>
+                    </div>
+                    <div class="kiskorok">
+                        <div class="kiskor"></div>
+                        <div class="kiskor"></div>
+                        <div class="kiskor"></div>
+                        <div class="kiskor"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
